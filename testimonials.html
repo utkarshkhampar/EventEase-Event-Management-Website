@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - EventEase</title>
+    <style>
+        /* Shared Styles (CSS from previous response) */
+        :root { --primary-color: #A52A2A; --secondary-color: #FFD700; --text-color: #333; --bg-color: #f9f9f9; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: var(--bg-color); color: var(--text-color); }
+        header { background-color: white; padding: 15px 5%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: var(--primary-color); font-size: 1.8em; font-weight: bold; }
+        nav a { margin-left: 25px; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        nav a:hover { color: var(--primary-color); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 5%; }
+        h1, h2 { text-align: center; color: var(--primary-color); }
+
+        /* Testimonial Page Specific Styles */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .testimonial-card {
+            background: white;
+            padding: 25px;
+            border-left: 5px solid var(--secondary-color);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .quote {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .client-info {
+            text-align: right;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        .event-type {
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">EventEase</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events & Services</a>
+            <a href="gallery.html">Portfolio</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="about.html">About Us</a>
+            <a href="booking.html" style="background-color: var(--secondary-color); color: var(--primary-color); padding: 8px 15px; text-decoration: none; border-radius: 5px;">Book Now</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Client Success Stories & Testimonials</h1>
+        <p style="text-align: center;">Hear from our satisfied clients and see why they trust EventEase for their most important occasions.</p>
+        <div class="testimonial-grid">
+            
+            <div class="testimonial-card">
+                <p class="quote">"The team handled our grand wedding in Jaipur flawlessly. From the Sangeet to the Vidaai, every ritual was executed with perfection and cultural sensitivity. Truly professional!"</p>
+                <div class="client-info">
+                    Mr. and Mrs. Kushwaha, Jaipur
+                    <div class="event-type">Grand Indian Wedding</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="quote">"EventEase managed our annual corporate conference for 500 attendees. Their attention to detail, technology setup, and catering was top-notch. Highly recommend for corporate clients."</p>
+                <div class="client-info">
+                    Pawan Kushwaha, SWE-II @ Shibob
+                    <div class="event-type">Corporate Conference</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="gourvi.jpeg" alt="Birthday Parties" class="service-image">
+                <p class="quote">"We wanted a simple yet beautiful ring ceremony, and they delivered exactly that within our budget. The inquiry process was clear, and the team was easy to work with."</p>
+                <div class="client-info">
+                    Gourvi Srivastava, Noida
+                    <div class="event-type">Engagement Ceremony</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>        

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Consultation - EventEase</title>
+    <style>
+        :root { --primary-color: #A52A2A; --secondary-color: #FFD700; --text-color: #333; --bg-color: #f9f9f9; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: var(--bg-color); color: var(--text-color); }
+        header { background-color: white; padding: 15px 5%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: var(--primary-color); font-size: 1.8em; font-weight: bold; }
+        nav a { margin-left: 25px; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        nav a:hover { color: var(--primary-color); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 5%; display: flex; flex-wrap: wrap; justify-content: space-between; }
+        h1, h2 { color: var(--primary-color); width: 100%; text-align: center; margin-bottom: 30px; }
+
+        .form-section, .contact-info {
+            width: 48%;
+            min-width: 300px;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+        .form-section h2, .contact-info h2 {
+            text-align: left;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input[type="text"], 
+        .contact-form input[type="email"], 
+        .contact-form input[type="date"], 
+        .contact-form select, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .submit-button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .submit-button:hover {
+            background-color: #7b1e1e;
+        }
+        .info-detail {
+            margin-bottom: 20px;
+        }
+        .info-detail strong {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        @media (max-width: 768px) {
+            .form-section, .contact-info {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">EventEase</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events & Services</a>
+            <a href="gallery.html">Portfolio</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="about.html">About Us</a>
+            <a href="booking.html" style="background-color: var(--secondary-color); color: var(--primary-color); padding: 8px 15px; text-decoration: none; border-radius: 5px;">Book Now</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Inquire & Book a Consultation</h1>
+        
+        <div class="form-section">
+            <h2>Start Your Event Journey</h2>
+            <form class="contact-form">
+                <label for="name">Your Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="event-type">Type of Event:</label>
+                <select id="event-type" name="event-type">
+                    <option value="wedding">Indian Wedding</option>
+                    <option value="corporate">Corporate Conference</option>
+                    <option value="birthday">Birthday Party</option>
+                    <option value="social">Social Gathering/Other</option>
+                </select>
+
+                <label for="date">Tentative Event Date:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="details">Event Details / Requirements:</label>
+                <textarea id="details" name="details" rows="5"></textarea>
+
+                <button type="submit" class="submit-button">Submit Inquiry & Book Consultation</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Utkarsh Kushwaha, Ist Year, CSE(Cyber Security), KIET Group of Institutions, Ghaziabad, UP</p>
+            <div class="info-detail">
+                <strong>Address:</strong>
+                Department of Information Technology, KIET Group of Institutions, Ghaziabad, UP
+            </div>
+            <div class="info-detail">
+                <strong>Phone:</strong>
+                +91 6386289342
+            </div>
+            <div class="info-detail">
+                <strong>Email:</strong>
+                utkarsh.25014054@kiet.edu
+            </div>
+            <p>We look forward to planning your next event! We are here to help you secure dates[cite: 26].</p>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you within 24 hours to schedule your consultation.');
+        });
+    </script>
+</body>
+</html>

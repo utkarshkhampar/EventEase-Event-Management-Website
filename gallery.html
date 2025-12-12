@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery & Portfolio - EventEase</title>
+    <style>
+   
+        :root { --primary-color: #A52A2A; --secondary-color: #FFD700; --text-color: #333; --bg-color: #f9f9f9; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: var(--bg-color); color: var(--text-color); }
+        header { background-color: white; padding: 15px 5%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: var(--primary-color); font-size: 1.8em; font-weight: bold; }
+        nav a { margin-left: 25px; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        nav a:hover { color: var(--primary-color); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 5%; }
+        h1, h2 { text-align: center; color: var(--primary-color); }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">EventEase</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events & Services</a>
+            <a href="gallery.html">Portfolio</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="about.html">About Us</a>
+            <a href="booking.html" style="background-color: var(--secondary-color); color: var(--primary-color); padding: 8px 15px; text-decoration: none; border-radius: 5px;">Book Now</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Our Portfolio: Events We've Executed</h1>
+        <p style="text-align: center;">A visual collection of high-quality images and videos from successfully executed events. Showcasing our expertise and previous successful events.</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="placeholder_indian_wedding_decor.jpg" alt="Destination Wedding">
+                <div class="overlay">Traditional Indian Wedding Decor</div>
+            </div>
+            <div class="gallery-item">
+                <video src="your_wedding_clip.mp4" controls loop muted></video>
+                <div class="overlay">Dandiya Night</div>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder_birthday_theme.jpg" alt="Birthday Bash">
+                <div class="overlay">Themed Yashashvi's Birthday Party</div>
+            </div>
+            <div class="gallery-item">
+                <img src="placeholder_engagement_ceremony.jpg" alt="Engagement Ceremony">
+                <div class="overlay">Elegant Garba Night</div>
+            </div>
+            <div class="gallery-item">
+                <video src="sangeet.mp4" controls loop muted></video>
+                <div class="overlay">Vibrant Sangeet Night</div>
+            </div>
+            <div class="gallery-item">
+                <img src="haldi.jpeg" alt="Product Launch">
+                <div class="overlay">Haldi Ceremony</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

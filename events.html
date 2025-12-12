@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Services - EventEase</title>
+    <style>
+        
+        :root { --primary-color: #A52A2A; --secondary-color: #FFD700; --text-color: #333; --bg-color: #f9f9f9; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: var(--bg-color); color: var(--text-color); }
+        header { background-color: white; padding: 15px 5%; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: var(--primary-color); font-size: 1.8em; font-weight: bold; }
+        nav a { margin-left: 25px; text-decoration: none; color: var(--text-color); font-weight: 500; }
+        nav a:hover { color: var(--primary-color); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 5%; }
+        h1, h2 { text-align: center; color: var(--primary-color); }
+
+       
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .service-card-full {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .service-card-full:hover {
+            transform: translateY(-5px);
+        }
+        .service-content {
+            padding: 20px;
+        }
+        .service-content h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .price {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        .service-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            
+            background-color: #ccc;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">EventEase</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events & Services</a>
+            <a href="gallery.html">Portfolio</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="about.html">About Us</a>
+            <a href="booking.html" style="background-color: var(--secondary-color); color: var(--primary-color); padding: 8px 15px; text-decoration: none; border-radius: 5px;">Book Now</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Our Comprehensive Event Services</h1>
+        <p style="text-align: center;">Explore the wide range of events we manage, from intimate gatherings to large-scale conferences.</p>
+
+        <div class="service-list">
+            
+            <div class="service-card-full">
+                <img src="placeholder_indian_wedding_decor.jpg" alt="Wedding Event" class="service-image">
+                <div class="service-content">
+                    <h3>Weddings (Vivah)</h3>
+                    <p>End-to-end planning, decor, catering, logistics, and traditional ceremony management.</p>
+                    <p class="price">Starting from: ₹5,00,000</p>
+                </div>
+            </div>
+
+            <div class="service-card-full">
+                <img src="haldi.jpeg" alt="Haldi/Sangeet Ceremony" class="service-image">
+                <div class="service-content">
+                    <h3>Haldi/Sangeet Ceremony</h3>
+                    <p>Traditional ceremony setup, decoration, and coordination for pre-wedding celebrations.</p>
+                    <p class="price">Starting from: ₹1,50,000</p>
+                </div>
+            </div>
+
+            <div class="service-card-full">
+                <img src="placeholder_birthday_theme.jpg"Birthday Parties" class="service-image">
+                <div class="service-content">
+                    <h3>Social Events (Birthday/Anniversary)</h3>
+                    <p>Theme design, entertainment, and customized party planning for all celebratory occasions.</p>
+                    <p class="price">Starting from: ₹50,000</p>
+                </div>
+            </div>
+
+        </div>
+        <p style="text-align: center; margin-top: 40px;"><a href="booking.html" style="color: var(--primary-color); font-weight: bold;">View Detailed Packages or Book a Consultation</a></p>
+    </div>
+</body>
+</html>
